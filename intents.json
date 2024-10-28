@@ -1,0 +1,2428 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Xin chào",
+        "Chào bạn",
+        "Hello",
+        "Hi",
+        "Hey",
+        "Có ai ở đó không?",
+        "Có ai giúp tôi không?"
+      ],
+      "responses": [
+        "Chào bạn, tôi có thể giúp gì cho bạn?",
+        "Xin chào!",
+        "Chào bạn, bạn cần hỗ trợ gì?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Tạm biệt",
+        "Bye",
+        "Hẹn gặp lại",
+        "Tạm biệt nhé",
+        "Chào tạm biệt"
+      ],
+      "responses": [
+        "Tạm biệt, hẹn gặp lại bạn!",
+        "Chúc bạn một ngày tốt lành!",
+        "Hẹn gặp lại bạn sớm!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Cảm ơn",
+        "Cảm ơn bạn",
+        "Cảm ơn rất nhiều",
+        "Rất cảm ơn",
+        "Cảm ơn nhé"
+      ],
+      "responses": [
+        "Rất vui được giúp bạn!",
+        "Không có gì!",
+        "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Bạn có những mặt hàng nào?",
+        "Bạn bán gì?",
+        "Có những loại sản phẩm nào?",
+        "Shop có bán gì không?",
+        "Sản phẩm của shop là gì?"
+      ],
+      "responses": [
+        "Chúng tôi bán quần áo, giày dép và phụ kiện.",
+        "Chúng tôi có quần áo, giày dép và phụ kiện."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Bạn có nhận thẻ tín dụng không?",
+        "Có thể thanh toán bằng Paypal không?",
+        "Tôi có thể trả bằng thẻ Mastercard không?",
+        "Có nhận thanh toán online không?",
+        "Cách thanh toán như thế nào?"
+      ],
+      "responses": [
+        "Chúng tôi chấp nhận thẻ tín dụng, Paypal và Mastercard.",
+        "Bạn có thể thanh toán bằng thẻ tín dụng, Paypal hoặc Mastercard."
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": [
+        "Phí vận chuyển là bao nhiêu?",
+        "Bạn có giao hàng không?",
+        "Thời gian giao hàng là bao lâu?",
+        "Giao hàng mất bao lâu?",
+        "Có giao hàng miễn phí không?"
+      ],
+      "responses": [
+        "Phí vận chuyển là 30,000 VND.",
+        "Chúng tôi có giao hàng toàn quốc.",
+        "Thời gian giao hàng từ 3-5 ngày."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Tình trạng đơn hàng của tôi là gì?",
+        "Đơn hàng của tôi đến đâu rồi?",
+        "Kiểm tra trạng thái đơn hàng giúp tôi",
+        "Đơn hàng đến khi nào?",
+        "Kiểm tra đơn hàng giúp tôi"
+      ],
+      "responses": [
+        "Vui lòng cung cấp mã đơn hàng để kiểm tra tình trạng đơn hàng của bạn.",
+        "Bạn có thể kiểm tra tình trạng đơn hàng của mình trong phần Đơn hàng của tôi trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "Tôi muốn hủy đơn hàng",
+        "Làm sao để hủy đơn?",
+        "Có thể hủy đơn hàng không?",
+        "Tôi có thể hủy đơn không?",
+        "Cách hủy đơn hàng"
+      ],
+      "responses": [
+        "Bạn có thể hủy đơn hàng trong phần Đơn hàng của tôi, hoặc cho chúng tôi biết mã đơn hàng để hỗ trợ bạn.",
+        "Nếu đơn hàng của bạn chưa được xử lý, bạn có thể tự hủy trong phần Đơn hàng của tôi."
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "Chính sách hoàn trả là gì?",
+        "Tôi muốn trả lại hàng",
+        "Hoàn tiền có được không?",
+        "Cách hoàn tiền",
+        "Shop có hoàn tiền không?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách hoàn tiền trong vòng 7 ngày nếu sản phẩm có lỗi hoặc không đúng như mô tả.",
+        "Bạn có thể gửi yêu cầu trả hàng qua mục Trả hàng & Hoàn tiền trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "Sản phẩm này còn hàng không?",
+        "Có sẵn không?",
+        "Khi nào có lại hàng?",
+        "Còn hàng không?",
+        "Sản phẩm đã hết hàng chưa?"
+      ],
+      "responses": [
+        "Hiện tại, sản phẩm còn hàng, bạn có thể đặt ngay.",
+        "Sản phẩm hiện đã hết hàng, vui lòng theo dõi để biết khi nào có lại hàng."
+      ]
+    },
+    {
+      "tag": "promo",
+      "patterns": [
+        "Có mã giảm giá không?",
+        "Có khuyến mãi gì không?",
+        "Ưu đãi hiện tại là gì?",
+        "Shop có khuyến mãi không?",
+        "Giảm giá hiện tại là gì?"
+      ],
+      "responses": [
+        "Chúng tôi có các mã giảm giá và khuyến mãi cho từng đợt. Hãy kiểm tra phần Khuyến mãi trên ứng dụng để biết thêm chi tiết.",
+        "Bạn có thể xem các ưu đãi và mã giảm giá trong phần Khuyến mãi."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "Có phương thức thanh toán nào?",
+        "Làm sao để thanh toán?",
+        "Có thể trả qua MoMo không?",
+        "Shop có nhận MoMo không?",
+        "Có thanh toán qua ví điện tử không?"
+      ],
+      "responses": [
+        "Chúng tôi chấp nhận thanh toán qua thẻ tín dụng, MoMo, và các phương thức phổ biến khác.",
+        "Bạn có thể thanh toán bằng thẻ tín dụng, MoMo, hoặc chuyển khoản."
+      ]
+    },
+    {
+      "tag": "customer_service",
+      "patterns": [
+        "Làm sao để liên hệ hỗ trợ?",
+        "Tôi cần hỗ trợ",
+        "Liên hệ dịch vụ khách hàng",
+        "Cần giúp đỡ",
+        "Tôi cần hỗ trợ ngay"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ với chúng tôi qua mục Hỗ trợ khách hàng trên ứng dụng, hoặc gọi đến tổng đài 1900-xxxx.",
+        "Vui lòng vào mục Hỗ trợ khách hàng để được trợ giúp."
+      ]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "Giờ mở cửa là khi nào?",
+        "Shop mở cửa lúc mấy giờ?",
+        "Thời gian hoạt động của shop?",
+        "Giờ làm việc của shop?",
+        "Shop mở cửa đến mấy giờ?"
+      ],
+      "responses": [
+        "Chúng tôi mở cửa từ 9:00 sáng đến 9:00 tối mỗi ngày.",
+        "Giờ làm việc của chúng tôi là từ 9:00 sáng đến 9:00 tối."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Shop ở đâu?",
+        "Địa chỉ của shop?",
+        "Shop nằm ở đâu?",
+        "Làm sao để đến shop?",
+        "Shop có chi nhánh ở đâu?"
+      ],
+      "responses": [
+        "Shop của chúng tôi nằm tại 100 Đường ABC, Quận 3, TP. DN.",
+        "Bạn có thể tìm thấy chúng tôi tại 100 Đường ABC, Quận 3, TP. DN."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "Chính sách đổi trả là gì?",
+        "Tôi muốn đổi hàng",
+        "Cách đổi hàng",
+        "Shop có đổi hàng không?",
+        "Đổi hàng như thế nào?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách đổi hàng trong vòng 7 ngày nếu sản phẩm có lỗi hoặc không đúng như mô tả.",
+        "Bạn có thể gửi yêu cầu đổi hàng qua mục Đổi hàng trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "membership",
+      "patterns": [
+        "Làm sao để trở thành thành viên?",
+        "Quyền lợi thành viên là gì?",
+        "Đăng ký thành viên như thế nào?",
+        "Thành viên có ưu đãi gì?",
+        "Lợi ích khi là thành viên?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký thành viên qua ứng dụng của chúng tôi.",
+        "Thành viên sẽ nhận được nhiều ưu đãi và khuyến mãi đặc biệt."
+      ]
+    },
+    {
+      "tag": "membership_benefits",
+      "patterns": [
+        "Lợi ích của thành viên là gì?",
+        "Thành viên được hưởng quyền lợi gì?",
+        "Ưu đãi cho thành viên?",
+        "Thành viên có những quyền lợi gì?",
+        "Thành viên được giảm giá không?"
+      ],
+      "responses": [
+        "Thành viên sẽ được giảm giá đặc biệt, tích điểm và nhận quà tặng vào các dịp đặc biệt.",
+        "Thành viên có thể tích điểm và đổi quà, nhận ưu đãi giảm giá và nhiều quyền lợi khác."
+      ]
+    },
+    {
+      "tag": "exchange_policy",
+      "patterns": [
+        "Chính sách đổi hàng là gì?",
+        "Tôi muốn đổi sản phẩm",
+        "Cách đổi sản phẩm",
+        "Shop có đổi sản phẩm không?",
+        "Đổi sản phẩm như thế nào?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách đổi sản phẩm trong vòng 7 ngày nếu sản phẩm có lỗi hoặc không đúng như mô tả.",
+        "Bạn có thể gửi yêu cầu đổi sản phẩm qua mục Đổi sản phẩm trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "store_events",
+      "patterns": [
+        "Sự kiện sắp tới của shop là gì?",
+        "Shop có sự kiện gì không?",
+        "Sự kiện của shop?",
+        "Shop có tổ chức sự kiện không?",
+        "Sự kiện sắp tới của shop?"
+      ],
+      "responses": [
+        "Chúng tôi sẽ có sự kiện giảm giá vào cuối tuần này.",
+        "Shop sẽ tổ chức sự kiện ra mắt sản phẩm mới vào tháng tới."
+      ]
+    },
+    {
+      "tag": "customer_care",
+      "patterns": [
+        "Làm sao để được hỗ trợ khi mua sắm?",
+        "Tôi cần hỗ trợ mua sắm",
+        "Liên hệ chăm sóc khách hàng",
+        "Cần giúp đỡ khi mua sắm",
+        "Tôi cần hỗ trợ mua hàng"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ với chúng tôi qua mục Hỗ trợ khách hàng trên ứng dụng, hoặc gọi đến tổng đài 1900-xxxx.",
+        "Vui lòng vào mục Hỗ trợ khách hàng để được trợ giúp khi mua sắm."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "Làm sao để theo dõi đơn hàng?",
+        "Kiểm tra đơn hàng như thế nào?",
+        "Có cách nào để theo dõi đơn hàng không?"
+      ],
+      "responses": [
+        "Bạn có thể theo dõi đơn hàng qua ứng dụng của chúng tôi, trong phần Đơn hàng của tôi.",
+        "Chúng tôi cung cấp cập nhật trạng thái đơn hàng trong mục Đơn hàng của tôi trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "discount_codes",
+      "patterns": [
+        "Có mã giảm giá nào không?",
+        "Tôi có thể nhận mã giảm giá ở đâu?",
+        "Cách dùng mã giảm giá như thế nào?"
+      ],
+      "responses": [
+        "Bạn có thể tìm mã giảm giá trong phần Khuyến mãi của chúng tôi.",
+        "Mã giảm giá sẽ được cập nhật thường xuyên trong phần Khuyến mãi trên ứng dụng."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "Giao hàng mất bao lâu?",
+        "Thời gian giao hàng bao lâu?",
+        "Khi nào tôi nhận được hàng?"
+      ],
+      "responses": [
+        "Thời gian giao hàng từ 3 đến 5 ngày, tùy thuộc vào vị trí của bạn.",
+        "Giao hàng thường mất từ 3 đến 7 ngày làm việc."
+      ]
+    },
+    {
+      "tag": "out_of_stock",
+      "patterns": [
+        "Sản phẩm đã hết hàng chưa?",
+        "Có còn hàng không?",
+        "Khi nào sản phẩm có lại hàng?"
+      ],
+      "responses": [
+        "Hiện sản phẩm đã hết hàng, vui lòng theo dõi để cập nhật thời gian có lại hàng.",
+        "Sản phẩm này hiện tạm thời hết hàng, nhưng sẽ có lại sớm."
+      ]
+    },
+    {
+      "tag": "shipping_fee",
+      "patterns": [
+        "Phí vận chuyển bao nhiêu?",
+        "Tính phí vận chuyển như thế nào?",
+        "Giao hàng có tính phí không?"
+      ],
+      "responses": [
+        "Phí vận chuyển là 30,000 VND cho mỗi đơn hàng.",
+        "Phí vận chuyển thay đổi tùy thuộc vào vị trí của bạn, từ 20,000 đến 50,000 VND."
+      ]
+    },
+    {
+      "tag": "return_conditions",
+      "patterns": [
+        "Điều kiện trả hàng là gì?",
+        "Làm sao để trả hàng?",
+        "Tôi cần điều kiện gì để trả hàng?"
+      ],
+      "responses": [
+        "Để trả hàng, sản phẩm phải chưa qua sử dụng và còn nguyên bao bì trong vòng 7 ngày kể từ ngày nhận hàng.",
+        "Sản phẩm chỉ được trả lại nếu chưa qua sử dụng và còn nguyên bao bì trong vòng 7 ngày."
+      ]
+    },
+    {
+      "tag": "refund_process",
+      "patterns": [
+        "Quy trình hoàn tiền như thế nào?",
+        "Làm sao để hoàn tiền?",
+        "Mất bao lâu để hoàn tiền?"
+      ],
+      "responses": [
+        "Thời gian hoàn tiền thường mất từ 3 đến 7 ngày làm việc sau khi nhận được yêu cầu hoàn trả.",
+        "Chúng tôi sẽ tiến hành hoàn tiền trong vòng 3-7 ngày kể từ khi nhận được sản phẩm hoàn trả."
+      ]
+    },
+    {
+      "tag": "international_shipping",
+      "patterns": [
+        "Có giao hàng quốc tế không?",
+        "Giao hàng đến nước ngoài được không?",
+        "Bạn có thể ship quốc tế không?"
+      ],
+      "responses": [
+        "Hiện tại chúng tôi chỉ giao hàng trong nước, chưa hỗ trợ giao hàng quốc tế.",
+        "Chúng tôi hiện chỉ cung cấp dịch vụ giao hàng trong nước."
+      ]
+    },
+    {
+      "tag": "contact_information",
+      "patterns": [
+        "Làm sao để liên hệ?",
+        "Thông tin liên hệ của shop là gì?",
+        "Shop có số điện thoại không?"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ qua hotline 1900-xxxx hoặc email support@shop.com.",
+        "Thông tin liên hệ: Số điện thoại 1900-xxxx, email support@shop.com."
+      ]
+    },
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "Giờ làm việc của shop là gì?",
+        "Shop làm việc đến mấy giờ?",
+        "Thời gian làm việc của shop?"
+      ],
+      "responses": [
+        "Chúng tôi làm việc từ 8:00 đến 18:00 mỗi ngày.",
+        "Giờ làm việc của chúng tôi là từ 8:00 đến 18:00."
+      ]
+    },
+    {
+      "tag": "special_offers",
+      "patterns": [
+        "Có ưu đãi đặc biệt nào không?",
+        "Shop có khuyến mãi nào không?",
+        "Có sự kiện giảm giá không?"
+      ],
+      "responses": [
+        "Hiện tại, chúng tôi có chương trình giảm giá đặc biệt cho các sản phẩm quần áo và phụ kiện. Hãy xem thêm trong phần Khuyến mãi.",
+        "Bạn có thể tìm thấy các ưu đãi đặc biệt trong mục Khuyến mãi của chúng tôi."
+      ]
+    },
+    {
+      "tag": "return_shipping_fee",
+      "patterns": [
+        "Phí vận chuyển khi trả hàng là bao nhiêu?",
+        "Trả hàng có tính phí vận chuyển không?",
+        "Tôi có phải trả phí khi gửi trả không?"
+      ],
+      "responses": [
+        "Phí vận chuyển khi trả hàng sẽ do khách hàng chi trả, trừ khi sản phẩm bị lỗi hoặc không đúng như mô tả.",
+        "Bạn sẽ tự chi trả phí vận chuyển khi trả hàng trừ khi sản phẩm có lỗi."
+      ]
+    },
+    {
+      "tag": "minimum_order",
+      "patterns": [
+        "Số tiền tối thiểu để mua hàng là bao nhiêu?",
+        "Có yêu cầu số tiền tối thiểu không?",
+        "Mua hàng có yêu cầu số tiền không?"
+      ],
+      "responses": [
+        "Chúng tôi không có yêu cầu về số tiền tối thiểu để mua hàng.",
+        "Không có giới hạn số tiền tối thiểu cho mỗi đơn hàng."
+      ]
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "Có chương trình khách hàng thân thiết không?",
+        "Shop có ưu đãi cho khách hàng cũ không?",
+        "Chương trình khách hàng thân thiết là gì?"
+      ],
+      "responses": [
+        "Chúng tôi có chương trình tích điểm cho mỗi đơn hàng. Bạn có thể đổi điểm cho các phần quà hoặc giảm giá.",
+        "Hãy tham gia chương trình khách hàng thân thiết của chúng tôi để nhận các ưu đãi đặc biệt."
+      ]
+    },
+    {
+      "tag": "payment_failed",
+      "patterns": [
+        "Thanh toán của tôi bị lỗi",
+        "Thanh toán không thành công",
+        "Làm sao khi thanh toán bị lỗi?"
+      ],
+      "responses": [
+        "Hãy kiểm tra lại thông tin thanh toán hoặc liên hệ ngân hàng của bạn.",
+        "Bạn có thể thử lại thanh toán hoặc dùng phương thức khác."
+      ]
+    },
+    {
+      "tag": "promo_code",
+      "patterns": [
+        "Có mã khuyến mãi nào không?",
+        "Tôi muốn nhận mã khuyến mãi",
+        "Làm sao để có mã giảm giá?"
+      ],
+      "responses": [
+        "Bạn có thể nhận mã khuyến mãi từ phần Khuyến mãi của chúng tôi.",
+        "Mã khuyến mãi được cập nhật thường xuyên trong ứng dụng."
+      ]
+    },
+    {
+      "tag": "replace_items",
+      "patterns": [
+        "Có thể đổi sản phẩm được không?",
+        "Shop có đổi sản phẩm không?",
+        "Tôi muốn thay sản phẩm khác"
+      ],
+      "responses": [
+        "Chúng tôi có hỗ trợ đổi hàng trong vòng 7 ngày với điều kiện sản phẩm còn nguyên vẹn.",
+        "Bạn có thể đổi sản phẩm trong vòng 7 ngày nếu chưa qua sử dụng."
+      ]
+    },
+    {
+      "tag": "check_product_origin",
+      "patterns": [
+        "Nguồn gốc sản phẩm là gì?",
+        "Sản phẩm này xuất xứ từ đâu?",
+        "Nguồn gốc của sản phẩm là từ đâu?"
+      ],
+      "responses": [
+        "Sản phẩm của chúng tôi có nguồn gốc rõ ràng và giấy tờ hợp lệ.",
+        "Sản phẩm được nhập khẩu chính hãng từ nhà cung cấp uy tín."
+      ]
+    },
+    {
+      "tag": "bulk_discount",
+      "patterns": [
+        "Có giảm giá khi mua số lượng lớn không?",
+        "Shop có giảm giá cho đơn lớn không?",
+        "Mua số lượng lớn có ưu đãi gì?"
+      ],
+      "responses": [
+        "Chúng tôi có ưu đãi giảm giá cho các đơn hàng số lượng lớn. Vui lòng liên hệ để biết thêm chi tiết.",
+        "Đối với các đơn hàng số lượng lớn, bạn sẽ được nhận ưu đãi đặc biệt."
+      ]
+    },
+    {
+      "tag": "VIP_customer",
+      "patterns": [
+        "Khách hàng VIP là gì?",
+        "Làm sao để trở thành khách VIP?",
+        "Shop có chế độ cho khách VIP không?"
+      ],
+      "responses": [
+        "Khách hàng VIP sẽ được hưởng nhiều quyền lợi và ưu đãi đặc biệt.",
+        "Bạn sẽ trở thành khách VIP khi mua sắm đạt một mức chi tiêu nhất định."
+      ]
+    },
+    {
+      "tag": "update_account",
+      "patterns": [
+        "Làm sao để cập nhật tài khoản?",
+        "Cập nhật thông tin tài khoản như thế nào?",
+        "Tôi muốn thay đổi thông tin tài khoản"
+      ],
+      "responses": [
+        "Bạn có thể vào mục Cài đặt để cập nhật thông tin tài khoản của mình.",
+        "Hãy vào phần tài khoản của tôi và chọn cập nhật thông tin."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "Tôi muốn khiếu nại",
+        "Có cách nào để phản hồi không?",
+        "Làm sao để khiếu nại dịch vụ?"
+      ],
+      "responses": [
+        "Bạn có thể gửi khiếu nại qua email support@shop.com hoặc liên hệ hotline của chúng tôi.",
+        "Chúng tôi sẵn sàng tiếp nhận khiếu nại và phản hồi từ khách hàng."
+      ]
+    },
+    {
+      "tag": "insurance_policy",
+      "patterns": [
+        "Shop có bảo hành không?",
+        "Sản phẩm có bảo hành không?",
+        "Chính sách bảo hành là gì?"
+      ],
+      "responses": [
+        "Chúng tôi có bảo hành sản phẩm trong vòng 12 tháng từ ngày mua.",
+        "Sản phẩm sẽ được bảo hành theo chính sách của nhà sản xuất."
+      ]
+    },
+    {
+      "tag": "track_order_time",
+      "patterns": [
+        "Khi nào tôi có thể theo dõi đơn hàng?",
+        "Thời gian nào có thể xem đơn hàng?",
+        "Bao lâu thì đơn hàng sẽ có thông tin?"
+      ],
+      "responses": [
+        "Bạn có thể theo dõi đơn hàng sau 24 giờ kể từ khi đặt hàng.",
+        "Thông tin theo dõi đơn hàng sẽ có trong vòng 1 ngày sau khi đặt."
+      ]
+    },
+    {
+      "tag": "online_help",
+      "patterns": [
+        "Shop có hỗ trợ trực tuyến không?",
+        "Có hỗ trợ online không?",
+        "Tôi có thể chat với ai để được giúp?"
+      ],
+      "responses": [
+        "Chúng tôi có hỗ trợ trực tuyến từ 8h - 22h mỗi ngày.",
+        "Bạn có thể nhắn tin với hỗ trợ viên trên ứng dụng hoặc trang web của chúng tôi."
+      ]
+    },
+    {
+      "tag": "multiple_payment_options",
+      "patterns": [
+        "Có thể chia thanh toán không?",
+        "Tôi muốn dùng nhiều phương thức thanh toán",
+        "Shop có hỗ trợ nhiều cách thanh toán không?"
+      ],
+      "responses": [
+        "Bạn có thể kết hợp nhiều phương thức thanh toán cho đơn hàng của mình.",
+        "Chúng tôi chấp nhận thanh toán qua thẻ, ví điện tử và chuyển khoản."
+      ]
+    },
+    {
+      "tag": "unavailable_product",
+      "patterns": [
+        "Sản phẩm không có sẵn thì phải làm sao?",
+        "Tôi phải làm gì khi sản phẩm hết hàng?",
+        "Có cách nào để biết khi nào hàng có lại không?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận thông báo khi sản phẩm có lại hàng.",
+        "Chúng tôi sẽ gửi thông báo đến bạn ngay khi sản phẩm có sẵn."
+      ]
+    },
+    {
+      "tag": "language_support",
+      "patterns": [
+        "Shop có hỗ trợ tiếng Anh không?",
+        "Có ai nói tiếng Anh không?",
+        "Tôi muốn được hỗ trợ bằng tiếng Anh"
+      ],
+      "responses": [
+        "Chúng tôi có hỗ trợ tiếng Anh. Vui lòng yêu cầu để được hỗ trợ viên giúp bạn.",
+        "Dịch vụ của chúng tôi hỗ trợ cả tiếng Anh và tiếng Việt."
+      ]
+    },
+    {
+      "tag": "damaged_product",
+      "patterns": [
+        "Sản phẩm bị hỏng thì sao?",
+        "Shop có hỗ trợ khi sản phẩm lỗi không?",
+        "Sản phẩm lỗi tôi phải làm gì?"
+      ],
+      "responses": [
+        "Nếu sản phẩm bị hỏng, bạn có thể yêu cầu đổi trả trong vòng 7 ngày.",
+        "Chúng tôi sẵn sàng hỗ trợ đổi trả cho sản phẩm lỗi."
+      ]
+    },
+    {
+      "tag": "seasonal_discounts",
+      "patterns": [
+        "Có giảm giá theo mùa không?",
+        "Khi nào có khuyến mãi theo mùa?",
+        "Shop có chương trình giảm giá vào dịp lễ không?"
+      ],
+      "responses": [
+        "Chúng tôi thường có chương trình giảm giá vào các dịp lễ và mùa mua sắm.",
+        "Bạn hãy theo dõi các chương trình khuyến mãi theo mùa của chúng tôi."
+      ]
+    },
+    {
+      "tag": "review_rewards",
+      "patterns": [
+        "Viết đánh giá có được gì không?",
+        "Shop có thưởng khi đánh giá không?",
+        "Tôi được gì nếu đánh giá sản phẩm?"
+      ],
+      "responses": [
+        "Chúng tôi có chương trình tặng điểm thưởng khi bạn viết đánh giá sản phẩm.",
+        "Hãy đánh giá sản phẩm và nhận điểm thưởng từ chúng tôi."
+      ]
+    },
+    {
+      "tag": "product_features",
+      "patterns": [
+        "Sản phẩm này có tính năng gì nổi bật?",
+        "Tôi muốn biết tính năng của sản phẩm.",
+        "Có thể mô tả về sản phẩm này không?"
+      ],
+      "responses": [
+        "Sản phẩm này có nhiều tính năng nổi bật như chống nước và bền bỉ.",
+        "Hãy xem mô tả sản phẩm để biết thêm chi tiết về các tính năng."
+      ]
+    },
+    {
+      "tag": "installation_guide",
+      "patterns": [
+        "Có hướng dẫn lắp đặt không?",
+        "Tôi có thể tìm hướng dẫn sử dụng ở đâu?",
+        "Sản phẩm này có dễ lắp đặt không?"
+      ],
+      "responses": [
+        "Chúng tôi có hướng dẫn lắp đặt chi tiết trên trang web.",
+        "Hãy kiểm tra mục Hướng dẫn sử dụng trên trang sản phẩm."
+      ]
+    },
+    {
+      "tag": "care_instructions",
+      "patterns": [
+        "Làm thế nào để bảo quản sản phẩm này?",
+        "Có cần phải chăm sóc đặc biệt không?",
+        "Sản phẩm này có dễ bị hỏng không?"
+      ],
+      "responses": [
+        "Bạn nên giặt tay và tránh ánh nắng trực tiếp để bảo quản sản phẩm.",
+        "Hãy xem hướng dẫn chăm sóc để biết thêm chi tiết."
+      ]
+    },
+    {
+      "tag": "loyalty_rewards",
+      "patterns": [
+        "Tôi có thể kiếm điểm thưởng như thế nào?",
+        "Có cách nào để tăng điểm thưởng không?",
+        "Tôi đã tích lũy được bao nhiêu điểm?"
+      ],
+      "responses": [
+        "Bạn có thể kiếm điểm thưởng khi mua sắm và tham gia các chương trình khuyến mãi.",
+        "Hãy đăng nhập vào tài khoản của bạn để kiểm tra điểm thưởng hiện tại."
+      ]
+    },
+    {
+      "tag": "gift_suggestions",
+      "patterns": [
+        "Có gợi ý nào cho quà tặng không?",
+        "Tôi muốn tìm quà tặng cho bạn bè.",
+        "Quà tặng nào đang hot?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều gợi ý quà tặng cho các dịp khác nhau trên trang web.",
+        "Hãy xem mục 'Quà tặng' để tìm kiếm những sản phẩm thú vị."
+      ]
+    },
+    {
+      "tag": "sustainable_products",
+      "patterns": [
+        "Có sản phẩm nào thân thiện với môi trường không?",
+        "Tôi muốn mua hàng bền vững.",
+        "Các sản phẩm xanh có sẵn không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều sản phẩm thân thiện với môi trường, hãy kiểm tra mục 'Sản phẩm bền vững'.",
+        "Hãy xem danh sách sản phẩm xanh trên trang web của chúng tôi."
+      ]
+    },
+    {
+      "tag": "customer_feedback",
+      "patterns": [
+        "Tôi có thể gửi phản hồi về sản phẩm không?",
+        "Làm thế nào để đánh giá dịch vụ của bạn?",
+        "Có cách nào để cho ý kiến không?"
+      ],
+      "responses": [
+        "Chúng tôi rất trân trọng phản hồi của bạn, hãy gửi qua email hoặc điền vào mẫu trên trang web.",
+        "Bạn có thể để lại ý kiến về dịch vụ trong phần đánh giá của chúng tôi."
+      ]
+    },
+    {
+      "tag": "email_subscriptions",
+      "patterns": [
+        "Tôi muốn đăng ký nhận tin tức qua email.",
+        "Làm thế nào để nhận thông báo về khuyến mãi?",
+        "Có cách nào để hủy đăng ký nhận email không?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận tin tức bằng cách điền vào mẫu đăng ký trên trang web.",
+        "Nếu bạn muốn hủy đăng ký, hãy làm theo liên kết trong email mà bạn đã nhận."
+      ]
+    },
+    {
+      "tag": "social_media_links",
+      "patterns": [
+        "Có thể tìm bạn trên mạng xã hội không?",
+        "Tôi muốn theo dõi bạn trên Facebook.",
+        "Bạn có tài khoản Instagram không?"
+      ],
+      "responses": [
+        "Bạn có thể theo dõi chúng tôi trên các mạng xã hội như Facebook và Instagram để cập nhật tin tức.",
+        "Hãy tìm kiếm tên của chúng tôi trên các nền tảng mạng xã hội để theo dõi."
+      ]
+    },
+    {
+      "tag": "account_security",
+      "patterns": [
+        "Làm thế nào để bảo mật tài khoản của tôi?",
+        "Có biện pháp nào để tăng cường bảo mật không?",
+        "Tôi quên mật khẩu, làm sao để lấy lại?"
+      ],
+      "responses": [
+        "Hãy sử dụng mật khẩu mạnh và thay đổi định kỳ để bảo vệ tài khoản của bạn.",
+        "Nếu bạn quên mật khẩu, hãy làm theo hướng dẫn để đặt lại mật khẩu."
+      ]
+    },
+    {
+      "tag": "checkout_process",
+      "patterns": [
+        "Làm thế nào để hoàn tất đơn hàng?",
+        "Có bước nào tôi cần lưu ý khi thanh toán không?",
+        "Quy trình thanh toán mất bao lâu?"
+      ],
+      "responses": [
+        "Quy trình thanh toán rất đơn giản, bạn chỉ cần làm theo hướng dẫn trên màn hình.",
+        "Thời gian thanh toán sẽ nhanh chóng chỉ mất vài phút."
+      ]
+    },
+    {
+      "tag": "order_confirmation",
+      "patterns": [
+        "Tôi có nhận được xác nhận đơn hàng không?",
+        "Khi nào tôi nhận được thông tin xác nhận?",
+        "Có thể kiểm tra xác nhận đơn hàng không?"
+      ],
+      "responses": [
+        "Bạn sẽ nhận được email xác nhận ngay sau khi đặt hàng thành công.",
+        "Hãy kiểm tra hộp thư đến của bạn để xem thông tin xác nhận."
+      ]
+    },
+    {
+      "tag": "user_reviews",
+      "patterns": [
+        "Có thể xem các đánh giá từ người dùng không?",
+        "Đánh giá sản phẩm có sẵn ở đâu?",
+        "Tôi muốn biết người khác nghĩ gì về sản phẩm này."
+      ],
+      "responses": [
+        "Bạn có thể xem các đánh giá từ người dùng trong phần đánh giá trên trang sản phẩm.",
+        "Chúng tôi có nhiều đánh giá từ khách hàng để bạn tham khảo."
+      ]
+    },
+    {
+      "tag": "promotional_codes",
+      "patterns": [
+        "Có mã khuyến mãi nào không?",
+        "Tôi muốn biết cách sử dụng mã giảm giá.",
+        "Mã khuyến mãi có hết hạn không?"
+      ],
+      "responses": [
+        "Chúng tôi thường xuyên có mã khuyến mãi, hãy theo dõi trang web để nhận thông tin.",
+        "Mã khuyến mãi thường có thời hạn sử dụng, hãy kiểm tra điều kiện sử dụng."
+      ]
+    },
+    {
+      "tag": "seasonal_products",
+      "patterns": [
+        "Có sản phẩm theo mùa nào không?",
+        "Tôi muốn mua sản phẩm cho mùa đông.",
+        "Có hàng hóa nào theo mùa không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều sản phẩm theo mùa, hãy kiểm tra mục 'Sản phẩm theo mùa' trên trang web.",
+        "Các sản phẩm mùa hè và mùa đông được cập nhật thường xuyên."
+      ]
+    },
+    {
+      "tag": "collaboration_inquiries",
+      "patterns": [
+        "Tôi muốn hợp tác với bạn.",
+        "Có cách nào để trở thành đối tác không?",
+        "Làm thế nào để gửi đề xuất hợp tác?"
+      ],
+      "responses": [
+        "Chúng tôi luôn mở cửa cho các cơ hội hợp tác, hãy gửi email cho chúng tôi với ý tưởng của bạn.",
+        "Bạn có thể gửi đề xuất hợp tác qua mẫu liên hệ trên trang web."
+      ]
+    },
+    {
+      "tag": "seasonal_sales",
+      "patterns": [
+        "Có đợt giảm giá nào không?",
+        "Khi nào có chương trình khuyến mãi tiếp theo?",
+        "Giảm giá vào dịp lễ nào?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều chương trình khuyến mãi vào các dịp lễ lớn. Hãy theo dõi trang web để biết thêm chi tiết.",
+        "Giảm giá mùa hè sẽ bắt đầu từ tháng sau!"
+      ]
+    },
+    {
+      "tag": "order_cancellation",
+      "patterns": [
+        "Làm thế nào để hủy đơn hàng?",
+        "Tôi muốn hủy đơn hàng vừa đặt.",
+        "Có thể hủy đơn hàng đã thanh toán không?"
+      ],
+      "responses": [
+        "Bạn có thể hủy đơn hàng trong vòng 1 giờ kể từ khi đặt hàng.",
+        "Để hủy đơn hàng, hãy liên hệ với chúng tôi ngay lập tức."
+      ]
+    },
+    {
+      "tag": "product_comparison",
+      "patterns": [
+        "Sản phẩm A và sản phẩm B khác nhau gì?",
+        "Tôi muốn so sánh hai sản phẩm.",
+        "Nên chọn sản phẩm nào giữa A và B?"
+      ],
+      "responses": [
+        "Sản phẩm A có chất liệu tốt hơn, trong khi sản phẩm B lại rẻ hơn.",
+        "Hãy cho tôi biết bạn ưu tiên yếu tố nào để tôi giúp bạn quyết định."
+      ]
+    },
+    {
+      "tag": "gift_card",
+      "patterns": [
+        "Có bán thẻ quà tặng không?",
+        "Làm thế nào để mua thẻ quà tặng?",
+        "Có thể sử dụng thẻ quà tặng cho đơn hàng không?"
+      ],
+      "responses": [
+        "Chúng tôi có bán thẻ quà tặng với nhiều mệnh giá khác nhau.",
+        "Bạn có thể sử dụng thẻ quà tặng khi thanh toán trên trang web."
+      ]
+    },
+    {
+      "tag": "order_history",
+      "patterns": [
+        "Tôi muốn xem lại lịch sử đơn hàng của mình.",
+        "Có thể kiểm tra các đơn hàng trước đây không?",
+        "Làm thế nào để xem các đơn hàng đã đặt?"
+      ],
+      "responses": [
+        "Bạn có thể kiểm tra lịch sử đơn hàng trong phần 'Tài khoản của tôi'.",
+        "Hãy đăng nhập để xem tất cả đơn hàng bạn đã đặt."
+      ]
+    },
+    {
+      "tag": "product_review",
+      "patterns": [
+        "Làm thế nào để đánh giá sản phẩm?",
+        "Tôi muốn để lại nhận xét cho sản phẩm.",
+        "Có thể xem đánh giá của người khác không?"
+      ],
+      "responses": [
+        "Bạn có thể để lại đánh giá trên trang sản phẩm sau khi đăng nhập.",
+        "Các đánh giá của khách hàng khác cũng có sẵn trên trang sản phẩm."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "Có thể liên hệ bộ phận hỗ trợ qua đâu?",
+        "Tôi muốn hỏi thêm về sản phẩm.",
+        "Có số điện thoại nào để liên hệ không?"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ với bộ phận hỗ trợ qua số điện thoại hoặc email được cung cấp trên trang web.",
+        "Chúng tôi luôn sẵn lòng hỗ trợ bạn bất cứ lúc nào."
+      ]
+    },
+    {
+      "tag": "new_arrivals",
+      "patterns": [
+        "Có sản phẩm mới nào không?",
+        "Tôi muốn xem các sản phẩm mới nhất.",
+        "Khi nào có hàng mới?"
+      ],
+      "responses": [
+        "Chúng tôi cập nhật sản phẩm mới hàng tuần, hãy theo dõi để không bỏ lỡ!",
+        "Sản phẩm mới nhất sẽ được ra mắt vào thứ Sáu này."
+      ]
+    },
+    {
+      "tag": "safety_measures",
+      "patterns": [
+        "Bạn có đảm bảo an toàn cho đơn hàng không?",
+        "Có biện pháp gì để bảo vệ thông tin cá nhân không?",
+        "Làm thế nào để tôi biết thông tin của mình an toàn?"
+      ],
+      "responses": [
+        "Chúng tôi sử dụng công nghệ mã hóa để bảo vệ thông tin của bạn.",
+        "Bạn có thể yên tâm rằng thông tin của bạn được bảo vệ an toàn."
+      ]
+    },
+    {
+      "tag": "product_inquiries",
+      "patterns": [
+        "Sản phẩm này có màu sắc khác không?",
+        "Có thể cho tôi biết thêm thông tin về sản phẩm này không?",
+        "Tôi có thể hỏi gì về sản phẩm?"
+      ],
+      "responses": [
+        "Sản phẩm này có nhiều màu sắc khác nhau, hãy kiểm tra trang sản phẩm để biết thêm chi tiết.",
+        "Bạn có thể hỏi về chất liệu, kích thước và tính năng của sản phẩm."
+      ]
+    },
+    {
+      "tag": "store_locator",
+      "patterns": [
+        "Tôi muốn tìm cửa hàng gần tôi nhất.",
+        "Có cách nào để tìm địa chỉ cửa hàng không?",
+        "Cửa hàng ở đâu?"
+      ],
+      "responses": [
+        "Bạn có thể sử dụng công cụ tìm cửa hàng trên trang web của chúng tôi để tìm địa chỉ gần nhất.",
+        "Hãy nhập địa chỉ của bạn để xem các cửa hàng gần nhất."
+      ]
+    },
+    {
+      "tag": "mobile_app",
+      "patterns": [
+        "Có ứng dụng di động không?",
+        "Tôi có thể tải ứng dụng ở đâu?",
+        "Ứng dụng có những tính năng gì?"
+      ],
+      "responses": [
+        "Chúng tôi có ứng dụng di động cho cả Android và iOS, bạn có thể tải về từ cửa hàng ứng dụng.",
+        "Ứng dụng của chúng tôi giúp bạn dễ dàng đặt hàng và theo dõi đơn hàng."
+      ]
+    },
+    {
+      "tag": "price_match",
+      "patterns": [
+        "Có chính sách giá thấp nhất không?",
+        "Nếu tôi thấy giá rẻ hơn ở nơi khác thì sao?",
+        "Có thể so sánh giá không?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách giá thấp nhất, hãy liên hệ với chúng tôi để biết thêm chi tiết.",
+        "Nếu bạn tìm thấy sản phẩm tương tự với giá rẻ hơn, hãy cho chúng tôi biết."
+      ]
+    },
+    {
+      "tag": "community_events",
+      "patterns": [
+        "Có sự kiện cộng đồng nào sắp tới không?",
+        "Tôi muốn tham gia sự kiện của bạn.",
+        "Làm thế nào để biết về các sự kiện sắp tới?"
+      ],
+      "responses": [
+        "Chúng tôi thường tổ chức các sự kiện cộng đồng, hãy theo dõi trang web để biết thêm thông tin.",
+        "Thông tin về sự kiện sẽ được cập nhật trên trang mạng xã hội của chúng tôi."
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "Bạn có thể gợi ý cho tôi sản phẩm nào không?",
+        "Tôi muốn tìm sản phẩm phù hợp.",
+        "Có sản phẩm nào tốt không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều sản phẩm phổ biến như áo khoác, giày thể thao và túi xách.",
+        "Bạn có thể thử xem các sản phẩm bán chạy nhất trên trang web."
+      ]
+    },
+    {
+      "tag": "size_guide",
+      "patterns": [
+        "Tôi có thể tìm hướng dẫn chọn kích thước ở đâu?",
+        "Có bảng kích thước không?",
+        "Làm thế nào để biết kích thước phù hợp?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp bảng kích thước trên mỗi trang sản phẩm.",
+        "Hãy tham khảo hướng dẫn kích thước để chọn đúng kích cỡ."
+      ]
+    },
+    {
+      "tag": "tracking_number",
+      "patterns": [
+        "Tôi có thể tìm số theo dõi đơn hàng ở đâu?",
+        "Khi nào thì tôi nhận được số theo dõi?",
+        "Tôi cần số theo dõi để kiểm tra đơn hàng."
+      ],
+      "responses": [
+        "Số theo dõi sẽ được gửi đến email của bạn khi đơn hàng được giao.",
+        "Bạn có thể xem số theo dõi trong tài khoản của mình."
+      ]
+    },
+    {
+      "tag": "bulk_order",
+      "patterns": [
+        "Tôi muốn đặt hàng số lượng lớn, có được không?",
+        "Có ưu đãi nào cho đơn hàng lớn không?",
+        "Làm thế nào để đặt hàng với số lượng lớn?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách ưu đãi cho đơn hàng số lượng lớn, hãy liên hệ với chúng tôi để biết thêm chi tiết.",
+        "Bạn có thể gửi yêu cầu qua email để nhận báo giá cho đơn hàng lớn."
+      ]
+    },
+    {
+      "tag": "payment_issue",
+      "patterns": [
+        "Tôi gặp vấn đề khi thanh toán.",
+        "Làm thế nào để khắc phục lỗi thanh toán?",
+        "Tôi không thể thanh toán bằng thẻ tín dụng."
+      ],
+      "responses": [
+        "Hãy kiểm tra thông tin thẻ và thử lại. Nếu vẫn gặp vấn đề, hãy liên hệ với bộ phận hỗ trợ khách hàng.",
+        "Bạn có thể thử thanh toán bằng phương thức khác."
+      ]
+    },
+    {
+      "tag": "gift_wrapping",
+      "patterns": [
+        "Có dịch vụ gói quà không?",
+        "Tôi muốn gói quà cho sản phẩm.",
+        "Có thể chọn gói quà khi đặt hàng không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp dịch vụ gói quà cho các sản phẩm, vui lòng chọn khi đặt hàng.",
+        "Gói quà sẽ có thêm phí, nhưng rất đẹp và chuyên nghiệp!"
+      ]
+    },
+    {
+      "tag": "user_account",
+      "patterns": [
+        "Tôi quên mật khẩu, làm thế nào để khôi phục?",
+        "Làm thế nào để thay đổi thông tin tài khoản?",
+        "Có thể xóa tài khoản không?"
+      ],
+      "responses": [
+        "Bạn có thể khôi phục mật khẩu qua email đã đăng ký.",
+        "Để thay đổi thông tin tài khoản, vui lòng vào phần cài đặt trong tài khoản."
+      ]
+    },
+    {
+      "tag": "order_minimum",
+      "patterns": [
+        "Có yêu cầu số lượng tối thiểu khi đặt hàng không?",
+        "Tôi có thể đặt hàng ít nhất bao nhiêu sản phẩm?",
+        "Có mức tối thiểu cho đơn hàng không?"
+      ],
+      "responses": [
+        "Chúng tôi không có yêu cầu số lượng tối thiểu cho đơn hàng.",
+        "Bạn có thể đặt bất kỳ số lượng nào bạn muốn."
+      ]
+    },
+    {
+      "tag": "special_requests",
+      "patterns": [
+        "Tôi có thể yêu cầu điều gì đặc biệt không?",
+        "Có cách nào để ghi chú trong đơn hàng không?",
+        "Tôi muốn thêm yêu cầu vào đơn hàng."
+      ],
+      "responses": [
+        "Bạn có thể để lại ghi chú trong phần yêu cầu đặc biệt khi đặt hàng.",
+        "Chúng tôi sẽ cố gắng đáp ứng yêu cầu của bạn trong khả năng có thể."
+      ]
+    },
+    {
+      "tag": "local_stores",
+      "patterns": [
+        "Có cửa hàng nào gần đây không?",
+        "Tôi muốn biết địa chỉ cửa hàng gần nhất.",
+        "Có thể đến cửa hàng không?"
+      ],
+      "responses": [
+        "Bạn có thể tìm cửa hàng gần nhất trên trang web của chúng tôi.",
+        "Hãy kiểm tra mục 'Cửa hàng' để biết địa chỉ và giờ mở cửa."
+      ]
+    },
+    {
+      "tag": "customer_service_hours",
+      "patterns": [
+        "Giờ làm việc của bộ phận chăm sóc khách hàng là gì?",
+        "Khi nào tôi có thể liên hệ với bộ phận hỗ trợ?",
+        "Có hỗ trợ 24/7 không?"
+      ],
+      "responses": [
+        "Bộ phận chăm sóc khách hàng làm việc từ 8h đến 18h từ thứ Hai đến thứ Sáu.",
+        "Bạn có thể liên hệ với chúng tôi qua email bất cứ lúc nào."
+      ]
+    },
+    {
+      "tag": "newsletter_subscription",
+      "patterns": [
+        "Tôi muốn đăng ký nhận bản tin.",
+        "Có cách nào để nhận tin tức từ bạn không?",
+        "Làm thế nào để hủy đăng ký nhận bản tin?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận bản tin tại trang web của chúng tôi để nhận thông tin mới nhất.",
+        "Để hủy đăng ký, vui lòng làm theo hướng dẫn trong email."
+      ]
+    },
+    {
+      "tag": "recent_orders",
+      "patterns": [
+        "Tôi muốn xem đơn hàng gần đây nhất của mình.",
+        "Có cách nào để kiểm tra đơn hàng đã đặt không?",
+        "Đơn hàng nào là gần đây nhất của tôi?"
+      ],
+      "responses": [
+        "Bạn có thể xem đơn hàng gần đây trong phần 'Lịch sử đơn hàng' trong tài khoản của bạn.",
+        "Hãy đăng nhập để kiểm tra đơn hàng của bạn."
+      ]
+    },
+    {
+      "tag": "account_verification",
+      "patterns": [
+        "Làm thế nào để xác minh tài khoản của tôi?",
+        "Có cần xác minh tài khoản không?",
+        "Tôi muốn biết về quy trình xác minh tài khoản."
+      ],
+      "responses": [
+        "Bạn sẽ nhận được email xác minh sau khi đăng ký tài khoản.",
+        "Hãy kiểm tra hộp thư đến để xác nhận tài khoản."
+      ]
+    },
+    {
+      "tag": "payment_receipt",
+      "patterns": [
+        "Tôi muốn nhận biên lai thanh toán.",
+        "Có thể gửi biên lai thanh toán qua email không?",
+        "Làm thế nào để lấy biên lai cho đơn hàng?"
+      ],
+      "responses": [
+        "Biên lai thanh toán sẽ được gửi đến email của bạn sau khi hoàn tất thanh toán.",
+        "Bạn cũng có thể tải biên lai từ trang 'Lịch sử đơn hàng'."
+      ]
+    },
+    {
+      "tag": "delivery_options",
+      "patterns": [
+        "Có những tùy chọn giao hàng nào?",
+        "Tôi có thể chọn giao hàng nhanh không?",
+        "Có dịch vụ giao hàng trong ngày không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp nhiều tùy chọn giao hàng, bao gồm giao hàng tiêu chuẩn và giao hàng nhanh.",
+        "Giao hàng trong ngày có sẵn cho một số khu vực."
+      ]
+    },
+    {
+      "tag": "seasonal_promotions",
+      "patterns": [
+        "Có chương trình khuyến mãi mùa nào không?",
+        "Tôi muốn biết về các ưu đãi mùa lễ hội.",
+        "Khi nào có khuyến mãi đặc biệt?"
+      ],
+      "responses": [
+        "Chúng tôi thường có các chương trình khuyến mãi theo mùa, hãy theo dõi trang web của chúng tôi!",
+        "Bạn có thể nhận thông báo về khuyến mãi qua email."
+      ]
+    },
+    {
+      "tag": "gift_cards",
+      "patterns": [
+        "Có thẻ quà tặng không?",
+        "Tôi có thể mua thẻ quà tặng ở đâu?",
+        "Làm thế nào để sử dụng thẻ quà tặng?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp thẻ quà tặng cho khách hàng. Bạn có thể mua trực tuyến!",
+        "Bạn có thể nhập mã thẻ quà tặng khi thanh toán."
+      ]
+    },
+    {
+      "tag": "product_warranty",
+      "patterns": [
+        "Sản phẩm có bảo hành không?",
+        "Thời gian bảo hành của sản phẩm là bao lâu?",
+        "Làm thế nào để yêu cầu bảo hành?"
+      ],
+      "responses": [
+        "Nhiều sản phẩm của chúng tôi đi kèm với bảo hành từ 6 tháng đến 1 năm.",
+        "Để yêu cầu bảo hành, vui lòng liên hệ với bộ phận hỗ trợ khách hàng."
+      ]
+    },
+    {
+      "tag": "sizing_assistance",
+      "patterns": [
+        "Tôi không biết chọn kích thước nào cho quần áo.",
+        "Có thể giúp tôi chọn kích thước phù hợp không?",
+        "Kích thước sản phẩm này như thế nào?"
+      ],
+      "responses": [
+        "Hãy cho chúng tôi biết chiều cao và cân nặng của bạn để chúng tôi có thể giúp bạn chọn kích thước phù hợp.",
+        "Bạn cũng có thể xem bảng kích thước trên trang sản phẩm."
+      ]
+    },
+    {
+      "tag": "payment_options",
+      "patterns": [
+        "Có những hình thức thanh toán nào?",
+        "Tôi có thể thanh toán bằng phương thức nào?",
+        "Có thể thanh toán khi nhận hàng không?"
+      ],
+      "responses": [
+        "Chúng tôi chấp nhận nhiều phương thức thanh toán như thẻ tín dụng, chuyển khoản ngân hàng và thanh toán khi nhận hàng.",
+        "Hãy chọn phương thức thanh toán khi đặt hàng."
+      ]
+    },
+    {
+      "tag": "product_reviews",
+      "patterns": [
+        "Có thể xem đánh giá của sản phẩm không?",
+        "Tôi muốn đọc nhận xét về sản phẩm.",
+        "Có thông tin nào về đánh giá sản phẩm không?"
+      ],
+      "responses": [
+        "Bạn có thể xem đánh giá và nhận xét của khách hàng khác trên trang sản phẩm.",
+        "Chúng tôi khuyến khích khách hàng chia sẻ ý kiến về sản phẩm."
+      ]
+    },
+    {
+      "tag": "social_media",
+      "patterns": [
+        "Công ty có trang mạng xã hội không?",
+        "Tôi có thể theo dõi bạn trên mạng xã hội ở đâu?",
+        "Có thông tin gì trên mạng xã hội không?"
+      ],
+      "responses": [
+        "Bạn có thể theo dõi chúng tôi trên Facebook, Instagram và Twitter để cập nhật tin tức.",
+        "Chúng tôi thường xuyên đăng tải thông tin và khuyến mãi trên các trang mạng xã hội."
+      ]
+    },
+    {
+      "tag": "product_categories",
+      "patterns": [
+        "Có thể cho tôi biết các danh mục sản phẩm không?",
+        "Có những loại sản phẩm nào trong cửa hàng?",
+        "Tôi muốn xem tất cả các danh mục sản phẩm. "
+      ],
+      "responses": [
+        "Chúng tôi có nhiều danh mục sản phẩm như quần áo, giày dép, phụ kiện và nhiều hơn nữa.",
+        "Hãy kiểm tra phần danh mục trên trang chính để tìm sản phẩm bạn muốn."
+      ]
+    },
+    {
+      "tag": "return_address",
+      "patterns": [
+        "Tôi có thể gửi hàng trả lại ở đâu?",
+        "Địa chỉ trả hàng là gì?",
+        "Có cần ghi chú gì khi gửi trả hàng không?"
+      ],
+      "responses": [
+        "Bạn có thể gửi trả hàng đến địa chỉ được ghi trên trang web của chúng tôi.",
+        "Hãy chắc chắn ghi rõ mã đơn hàng trên bưu kiện trả lại."
+      ]
+    },
+    {
+      "tag": "gift_options",
+      "patterns": [
+        "Có sản phẩm nào thích hợp làm quà không?",
+        "Tôi đang tìm quà tặng cho bạn bè.",
+        "Có gói quà không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều sản phẩm thích hợp làm quà tặng.",
+        "Bạn có thể chọn gói quà khi thanh toán cho sản phẩm."
+      ]
+    },
+    {
+      "tag": "faq",
+      "patterns": [
+        "Có câu hỏi thường gặp không?",
+        "Tôi có thể tìm thấy câu hỏi thường gặp ở đâu?",
+        "Có thông tin hữu ích nào không?"
+      ],
+      "responses": [
+        "Chúng tôi có phần câu hỏi thường gặp trên trang web để giải đáp các thắc mắc phổ biến.",
+        "Hãy kiểm tra phần FAQ để biết thêm thông tin."
+      ]
+    },
+    {
+      "tag": "live_chat",
+      "patterns": [
+        "Có hỗ trợ chat trực tuyến không?",
+        "Tôi có thể nói chuyện với nhân viên không?",
+        "Làm thế nào để bắt đầu cuộc trò chuyện trực tuyến?"
+      ],
+      "responses": [
+        "Chúng tôi có dịch vụ chat trực tuyến từ 8h đến 20h mỗi ngày.",
+        "Bạn có thể nhấn vào biểu tượng chat ở góc phải để bắt đầu trò chuyện."
+      ]
+    },
+    {
+      "tag": "preorder_info",
+      "patterns": [
+        "Có thể đặt hàng trước không?",
+        "Tôi có thể đặt hàng cho sản phẩm chưa có sẵn không?",
+        "Làm thế nào để thực hiện đặt hàng trước?"
+      ],
+      "responses": [
+        "Chúng tôi có dịch vụ đặt hàng trước cho một số sản phẩm. Hãy kiểm tra trang sản phẩm để biết thêm!",
+        "Bạn sẽ nhận thông báo khi sản phẩm có hàng."
+      ]
+    },
+    {
+      "tag": "app_features",
+      "patterns": [
+        "Ứng dụng di động có tính năng gì?",
+        "Tôi có thể làm gì trên ứng dụng?",
+        "Có hỗ trợ nào cho người dùng ứng dụng không?"
+      ],
+      "responses": [
+        "Ứng dụng của chúng tôi cung cấp nhiều tính năng như theo dõi đơn hàng, thanh toán nhanh và xem khuyến mãi.",
+        "Bạn có thể sử dụng ứng dụng để nhận thông báo về giảm giá và ưu đãi."
+      ]
+    },
+    {
+      "tag": "company_values",
+      "patterns": [
+        "Công ty có giá trị gì không?",
+        "Bạn có cam kết nào về chất lượng không?",
+        "Làm thế nào để công ty đảm bảo sự hài lòng của khách hàng?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết cung cấp sản phẩm chất lượng và dịch vụ khách hàng tốt nhất.",
+        "Giá trị của chúng tôi bao gồm sự minh bạch, chất lượng và trách nhiệm với khách hàng."
+      ]
+    },
+    {
+      "tag": "partnership_inquiries",
+      "patterns": [
+        "Tôi muốn hợp tác với công ty.",
+        "Có thể làm gì để trở thành đối tác không?",
+        "Làm thế nào để tôi có thể gửi đề nghị hợp tác?"
+      ],
+      "responses": [
+        "Chúng tôi luôn tìm kiếm cơ hội hợp tác. Hãy gửi đề nghị của bạn qua email.",
+        "Chúng tôi rất vui khi có thể thảo luận về các cơ hội hợp tác tiềm năng."
+      ]
+    },
+    {
+      "tag": "return_process",
+      "patterns": [
+        "Làm thế nào để trả hàng?",
+        "Có quy trình nào cho việc trả hàng không?",
+        "Thời gian trả hàng mất bao lâu?"
+      ],
+      "responses": [
+        "Quy trình trả hàng rất đơn giản. Bạn chỉ cần điền mẫu trả hàng và gửi sản phẩm về cho chúng tôi.",
+        "Thời gian xử lý trả hàng thường mất khoảng 5-7 ngày."
+      ]
+    },
+    {
+      "tag": "account_settings",
+      "patterns": [
+        "Tôi muốn thay đổi thông tin tài khoản.",
+        "Có cách nào để chỉnh sửa thông tin cá nhân không?",
+        "Tôi không thể đăng nhập vào tài khoản của mình."
+      ],
+      "responses": [
+        "Bạn có thể thay đổi thông tin tài khoản trong phần 'Cài đặt tài khoản' trên trang web.",
+        "Nếu bạn gặp khó khăn trong việc đăng nhập, hãy sử dụng chức năng 'Quên mật khẩu'."
+      ]
+    },
+    {
+      "tag": "wishlist",
+      "patterns": [
+        "Tôi có thể tạo danh sách mong muốn không?",
+        "Làm thế nào để lưu sản phẩm yêu thích?",
+        "Có chức năng gì cho danh sách mong muốn không?"
+      ],
+      "responses": [
+        "Bạn có thể tạo danh sách mong muốn để lưu lại những sản phẩm yêu thích.",
+        "Hãy nhấn vào biểu tượng trái tim để thêm sản phẩm vào danh sách của bạn."
+      ]
+    },
+    {
+      "tag": "feedback_survey",
+      "patterns": [
+        "Có khảo sát nào về sự hài lòng của khách hàng không?",
+        "Tôi có thể tham gia khảo sát không?",
+        "Có ưu đãi gì khi tham gia khảo sát không?"
+      ],
+      "responses": [
+        "Chúng tôi thường xuyên tổ chức khảo sát để thu thập ý kiến của khách hàng. Hãy tham gia để nhận ưu đãi!",
+        "Chúng tôi rất trân trọng ý kiến của bạn!"
+      ]
+    },
+    {
+      "tag": "promotional_events",
+      "patterns": [
+        "Có sự kiện khuyến mãi nào sắp tới không?",
+        "Tôi có thể tham gia sự kiện nào?",
+        "Làm thế nào để biết thông tin về sự kiện?"
+      ],
+      "responses": [
+        "Chúng tôi thường tổ chức các sự kiện khuyến mãi vào cuối tuần. Theo dõi trang web của chúng tôi để biết thêm!",
+        "Hãy đăng ký nhận tin để không bỏ lỡ sự kiện nào!"
+      ]
+    },
+    {
+      "tag": "careers",
+      "patterns": [
+        "Có tuyển dụng nhân viên không?",
+        "Tôi muốn biết về cơ hội việc làm tại công ty.",
+        "Làm thế nào để nộp đơn xin việc?"
+      ],
+      "responses": [
+        "Chúng tôi thường xuyên tuyển dụng! Bạn có thể tìm thấy thông tin về cơ hội việc làm trên trang tuyển dụng của chúng tôi.",
+        "Gửi CV của bạn qua email cho chúng tôi để được xem xét."
+      ]
+    },
+    {
+      "tag": "shipping_methods",
+      "patterns": [
+        "Có những phương thức giao hàng nào?",
+        "Thời gian giao hàng mất bao lâu?",
+        "Có thể chọn giao hàng nhanh không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp nhiều phương thức giao hàng, bao gồm giao hàng tiêu chuẩn và giao hàng nhanh.",
+        "Thời gian giao hàng tiêu chuẩn là từ 3-5 ngày."
+      ]
+    },
+    {
+      "tag": "subscription_service",
+      "patterns": [
+        "Có dịch vụ đăng ký nào không?",
+        "Tôi có thể đăng ký nhận sản phẩm hàng tháng không?",
+        "Làm thế nào để hủy đăng ký?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp dịch vụ đăng ký cho một số sản phẩm. Bạn có thể tìm thấy thông tin trên trang web.",
+        "Để hủy đăng ký, vui lòng liên hệ với chúng tôi."
+      ]
+    },
+    {
+      "tag": "environmental_policy",
+      "patterns": [
+        "Công ty có chính sách bảo vệ môi trường không?",
+        "Bạn có sử dụng bao bì tái chế không?",
+        "Có chương trình nào để giảm thiểu rác thải không?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết bảo vệ môi trường và sử dụng bao bì tái chế cho sản phẩm.",
+        "Chúng tôi cũng có các chương trình giảm thiểu rác thải và khuyến khích khách hàng tham gia."
+      ]
+    },
+    {
+      "tag": "user_feedback",
+      "patterns": [
+        "Tôi có thể để lại phản hồi ở đâu?",
+        "Có cách nào để gửi đánh giá không?",
+        "Làm thế nào để gửi ý kiến của tôi?"
+      ],
+      "responses": [
+        "Chúng tôi luôn hoan nghênh ý kiến của bạn! Bạn có thể gửi phản hồi qua mẫu liên hệ trên trang web.",
+        "Hãy cho chúng tôi biết suy nghĩ của bạn để chúng tôi cải thiện dịch vụ."
+      ]
+    },
+    {
+      "tag": "personalization_options",
+      "patterns": [
+        "Có thể cá nhân hóa sản phẩm không?",
+        "Tôi có thể yêu cầu thay đổi cho sản phẩm không?",
+        "Có dịch vụ thiết kế theo yêu cầu không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp một số tùy chọn cá nhân hóa cho sản phẩm. Vui lòng kiểm tra trang sản phẩm cụ thể.",
+        "Bạn có thể gửi yêu cầu đặc biệt để được hỗ trợ."
+      ]
+    },
+    {
+      "tag": "fashion_advice",
+      "patterns": [
+        "Tôi muốn biết về xu hướng thời trang hiện tại.",
+        "Có thể gợi ý trang phục cho tôi không?",
+        "Phong cách nào đang hot bây giờ?"
+      ],
+      "responses": [
+        "Chúng tôi luôn cập nhật các xu hướng thời trang mới. Hãy theo dõi trang blog của chúng tôi để biết thêm!",
+        "Nếu bạn cần gợi ý, hãy cho tôi biết phong cách bạn thích."
+      ]
+    },
+    {
+      "tag": "corporate_sales",
+      "patterns": [
+        "Có chương trình bán hàng cho doanh nghiệp không?",
+        "Tôi muốn biết về chính sách cho khách hàng doanh nghiệp.",
+        "Có giảm giá cho đơn hàng lớn không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp chương trình bán hàng cho doanh nghiệp với nhiều ưu đãi đặc biệt.",
+        "Hãy liên hệ với chúng tôi để biết thêm thông tin về các gói doanh nghiệp."
+      ]
+    },
+    {
+      "tag": "sizing_issues",
+      "patterns": [
+        "Sản phẩm tôi nhận không đúng kích thước.",
+        "Làm thế nào để đổi kích thước?",
+        "Có thể gửi lại sản phẩm nếu không vừa không?"
+      ],
+      "responses": [
+        "Nếu sản phẩm không vừa, bạn có thể đổi sang kích thước khác trong vòng 30 ngày.",
+        "Vui lòng liên hệ với chúng tôi để được hướng dẫn quy trình đổi hàng."
+      ]
+    },
+    {
+      "tag": "exclusive_offers",
+      "patterns": [
+        "Có ưu đãi độc quyền nào không?",
+        "Tôi có thể nhận được mã giảm giá không?",
+        "Làm thế nào để nhận thông báo về ưu đãi?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều ưu đãi độc quyền cho khách hàng đăng ký nhận tin tức.",
+        "Hãy theo dõi email của bạn để không bỏ lỡ bất kỳ ưu đãi nào!"
+      ]
+    },
+    {
+      "tag": "product_care",
+      "patterns": [
+        "Cách bảo quản sản phẩm như thế nào?",
+        "Tôi nên làm gì để giữ cho sản phẩm bền lâu?",
+        "Có hướng dẫn chăm sóc sản phẩm không?"
+      ],
+      "responses": [
+        "Chúng tôi có hướng dẫn chăm sóc cho từng sản phẩm. Vui lòng xem trên trang sản phẩm.",
+        "Để đảm bảo sản phẩm luôn trong tình trạng tốt, hãy tuân theo hướng dẫn bảo quản."
+      ]
+    },
+    {
+      "tag": "customer_reviews",
+      "patterns": [
+        "Tôi có thể xem đánh giá của khách hàng không?",
+        "Có đánh giá nào về sản phẩm không?",
+        "Làm thế nào để để lại đánh giá?"
+      ],
+      "responses": [
+        "Bạn có thể xem đánh giá của khách hàng trên trang sản phẩm.",
+        "Hãy để lại đánh giá của bạn sau khi sử dụng sản phẩm để giúp những khách hàng khác."
+      ]
+    },
+    {
+      "tag": "back_in_stock",
+      "patterns": [
+        "Khi nào sản phẩm sẽ có hàng trở lại?",
+        "Có thể thông báo khi hàng về không?",
+        "Tôi muốn biết khi nào có lại sản phẩm này."
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận thông báo qua email khi sản phẩm có hàng trở lại.",
+        "Chúng tôi sẽ thông báo cho bạn ngay khi sản phẩm được bổ sung."
+      ]
+    },
+    {
+      "tag": "error_reporting",
+      "patterns": [
+        "Tôi phát hiện lỗi trên trang web.",
+        "Có cách nào để báo lỗi không?",
+        "Tôi muốn thông báo về một lỗi kỹ thuật."
+      ],
+      "responses": [
+        "Bạn có thể gửi báo cáo lỗi qua email hoặc sử dụng mẫu liên hệ trên trang web của chúng tôi.",
+        "Chúng tôi rất cảm kích nếu bạn thông báo về các lỗi để chúng tôi có thể khắc phục."
+      ]
+    },
+    {
+      "tag": "subscription_cancellation",
+      "patterns": [
+        "Tôi muốn hủy dịch vụ đăng ký.",
+        "Có thể hủy đăng ký bất cứ lúc nào không?",
+        "Làm thế nào để hủy đăng ký?"
+      ],
+      "responses": [
+        "Bạn có thể hủy đăng ký bất cứ lúc nào qua tài khoản của mình.",
+        "Vui lòng liên hệ với chúng tôi nếu bạn gặp khó khăn trong việc hủy đăng ký."
+      ]
+    },
+    {
+      "tag": "sustainability_initiatives",
+      "patterns": [
+        "Công ty có các sáng kiến bền vững không?",
+        "Tôi muốn biết về các hoạt động bảo vệ môi trường của bạn.",
+        "Có kế hoạch nào để giảm tác động đến môi trường không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều sáng kiến bền vững, bao gồm việc giảm chất thải và sử dụng năng lượng tái tạo.",
+        "Hãy xem trang 'Sáng kiến bền vững' để biết thêm thông tin."
+      ]
+    },
+    {
+      "tag": "merchandise",
+      "patterns": [
+        "Có sản phẩm nào khác ngoài quần áo không?",
+        "Tôi có thể tìm thấy hàng hóa nào khác không?",
+        "Có phụ kiện nào không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp nhiều loại sản phẩm khác nhau, bao gồm phụ kiện và đồ gia dụng.",
+        "Hãy xem danh mục hàng hóa của chúng tôi để biết thêm chi tiết."
+      ]
+    },
+    {
+      "tag": "out_of_stock_notifications",
+      "patterns": [
+        "Có thể thông báo khi sản phẩm hết hàng có hàng trở lại không?",
+        "Tôi muốn nhận thông báo khi hàng về.",
+        "Làm thế nào để biết khi nào sản phẩm này có hàng?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận thông báo khi sản phẩm được bổ sung lại.",
+        "Chúng tôi sẽ thông báo cho bạn ngay khi hàng về."
+      ]
+    },
+    {
+      "tag": "newsletter",
+      "patterns": [
+        "Tôi muốn đăng ký nhận bản tin.",
+        "Có bản tin nào không?",
+        "Làm thế nào để nhận tin tức mới?"
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận bản tin để nhận thông tin về ưu đãi và sản phẩm mới.",
+        "Hãy điền địa chỉ email của bạn vào ô đăng ký trên trang chủ."
+      ]
+    },
+    {
+      "tag": "location_services",
+      "patterns": [
+        "Bạn có cửa hàng nào không?",
+        "Tôi có thể đến cửa hàng ở đâu?",
+        "Có thể xem địa chỉ cửa hàng không?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều cửa hàng trên toàn quốc. Hãy xem danh sách trên trang cửa hàng.",
+        "Vui lòng nhập địa chỉ của bạn để tìm cửa hàng gần nhất."
+      ]
+    },
+    {
+      "tag": "product_materials",
+      "patterns": [
+        "Sản phẩm này làm từ chất liệu gì?",
+        "Có thông tin về vật liệu không?",
+        "Tôi muốn biết chất liệu sản phẩm."
+      ],
+      "responses": [
+        "Thông tin về chất liệu được ghi rõ trên trang sản phẩm.",
+        "Hãy xem phần mô tả sản phẩm để biết thêm chi tiết về vật liệu."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Tôi có thể gửi phản hồi về sản phẩm không?",
+        "Làm thế nào để cho ý kiến về dịch vụ?",
+        "Có cách nào để gửi góp ý không?"
+      ],
+      "responses": [
+        "Bạn có thể gửi phản hồi qua trang 'Liên hệ' hoặc để lại ý kiến ngay trên sản phẩm.",
+        "Chúng tôi luôn chào đón phản hồi từ khách hàng để cải thiện dịch vụ."
+      ]
+    },
+    {
+      "tag": "order_modification",
+      "patterns": [
+        "Tôi có thể thay đổi đơn hàng đã đặt không?",
+        "Làm thế nào để chỉnh sửa đơn hàng?",
+        "Có thể thêm sản phẩm vào đơn hàng không?"
+      ],
+      "responses": [
+        "Nếu đơn hàng chưa được xử lý, bạn có thể chỉnh sửa hoặc thêm sản phẩm.",
+        "Hãy liên hệ với chúng tôi ngay lập tức để được hỗ trợ."
+      ]
+    },
+    {
+      "tag": "event_promotions",
+      "patterns": [
+        "Có sự kiện nào diễn ra không?",
+        "Khi nào có chương trình khuyến mãi đặc biệt?",
+        "Có sự kiện nào sắp tới không?"
+      ],
+      "responses": [
+        "Chúng tôi thường tổ chức các sự kiện và chương trình khuyến mãi, hãy theo dõi trang chủ để không bỏ lỡ.",
+        "Thông tin về sự kiện sẽ được cập nhật trên mạng xã hội của chúng tôi."
+      ]
+    },
+    {
+      "tag": "live_chat_support",
+      "patterns": [
+        "Có hỗ trợ trực tuyến không?",
+        "Tôi có thể trò chuyện với nhân viên không?",
+        "Có tính năng chat trực tuyến không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp hỗ trợ trực tuyến qua chat. Bạn có thể tìm thấy tính năng này ở góc dưới bên phải trang.",
+        "Hãy nhấp vào biểu tượng chat để trò chuyện với nhân viên của chúng tôi."
+      ]
+    },
+    {
+      "tag": "pre_order",
+      "patterns": [
+        "Có thể đặt hàng trước không?",
+        "Khi nào có thể đặt hàng trước sản phẩm mới?",
+        "Tôi có thể đặt hàng trước sản phẩm này không?"
+      ],
+      "responses": [
+        "Chúng tôi cho phép đặt hàng trước cho một số sản phẩm mới. Hãy theo dõi trang sản phẩm để biết thêm thông tin.",
+        "Nếu bạn muốn đặt hàng trước, hãy nhấn vào nút 'Đặt hàng trước' trên trang sản phẩm."
+      ]
+    },
+    {
+      "tag": "error_messages",
+      "patterns": [
+        "Tôi nhận được thông báo lỗi khi thanh toán.",
+        "Có cách nào để khắc phục lỗi không?",
+        "Tôi không thể hoàn tất đơn hàng."
+      ],
+      "responses": [
+        "Vui lòng kiểm tra thông tin thanh toán của bạn và thử lại.",
+        "Nếu vấn đề vẫn tiếp diễn, hãy liên hệ với chúng tôi để được hỗ trợ."
+      ]
+    },
+    {
+      "tag": "product_recommendations",
+      "patterns": [
+        "Bạn có thể gợi ý sản phẩm nào không?",
+        "Có sản phẩm nào tương tự không?",
+        "Tôi muốn tìm sản phẩm phù hợp với tôi."
+      ],
+      "responses": [
+        "Dựa trên sở thích của bạn, chúng tôi gợi ý một số sản phẩm phổ biến.",
+        "Hãy cho chúng tôi biết bạn thích gì để nhận được gợi ý tốt nhất."
+      ]
+    },
+    {
+      "tag": "trending_products",
+      "patterns": [
+        "Sản phẩm nào đang hot?",
+        "Có sản phẩm nào bán chạy không?",
+        "Tôi muốn biết sản phẩm nào được ưa chuộng nhất."
+      ],
+      "responses": [
+        "Chúng tôi luôn cập nhật danh sách sản phẩm bán chạy nhất. Hãy xem phần sản phẩm hot trên trang chủ.",
+        "Sản phẩm trending sẽ được hiển thị trên trang đầu tiên."
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "Có chương trình khuyến mãi nào không?",
+        "Tôi có thể nhận ưu đãi nào không?",
+        "Khi nào có đợt sale tiếp theo?"
+      ],
+      "responses": [
+        "Chúng tôi thường có các chương trình khuyến mãi hấp dẫn. Hãy theo dõi trang chủ để cập nhật thông tin.",
+        "Bạn có thể nhận thông báo về ưu đãi qua bản tin."
+      ]
+    },
+    {
+      "tag": "subscription_box",
+      "patterns": [
+        "Có dịch vụ hộp đăng ký không?",
+        "Tôi có thể nhận sản phẩm hàng tháng không?",
+        "Có thông tin gì về hộp đăng ký không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp dịch vụ hộp đăng ký với các sản phẩm thú vị mỗi tháng.",
+        "Hãy xem trang đăng ký để biết thêm thông tin về chương trình này."
+      ]
+    },
+    {
+      "tag": "shopping_cart",
+      "patterns": [
+        "Tôi có thể xem giỏ hàng ở đâu?",
+        "Làm thế nào để thêm sản phẩm vào giỏ hàng?",
+        "Có thể xóa sản phẩm khỏi giỏ hàng không?"
+      ],
+      "responses": [
+        "Bạn có thể xem giỏ hàng của mình ở góc trên bên phải trang.",
+        "Để thêm hoặc xóa sản phẩm, hãy truy cập vào giỏ hàng và thực hiện các thao tác cần thiết."
+      ]
+    },
+    {
+      "tag": "product_details",
+      "patterns": [
+        "Tôi muốn biết thêm chi tiết về sản phẩm này.",
+        "Có thể xem mô tả sản phẩm không?",
+        "Sản phẩm này có thông số gì đặc biệt không?"
+      ],
+      "responses": [
+        "Thông tin chi tiết về sản phẩm có thể được tìm thấy trên trang sản phẩm.",
+        "Hãy xem phần mô tả để biết thêm về chất liệu, kích thước và đặc điểm."
+      ]
+    },
+    {
+      "tag": "flash_sales",
+      "patterns": [
+        "Có đợt flash sale nào không?",
+        "Khi nào có chương trình flash sale tiếp theo?",
+        "Làm thế nào để tham gia flash sale?"
+      ],
+      "responses": [
+        "Chúng tôi thường có các đợt flash sale với mức giảm giá đặc biệt. Hãy theo dõi trang chủ để cập nhật!",
+        "Tham gia ngay khi đợt flash sale bắt đầu để không bỏ lỡ ưu đãi."
+      ]
+    },
+    {
+      "tag": "store_locations",
+      "patterns": [
+        "Có cửa hàng nào gần tôi không?",
+        "Tôi có thể tìm cửa hàng ở đâu?",
+        "Địa chỉ cửa hàng của bạn là gì?"
+      ],
+      "responses": [
+        "Bạn có thể tìm thấy danh sách các cửa hàng trên trang 'Cửa hàng của chúng tôi'.",
+        "Chúng tôi có nhiều cửa hàng trên toàn quốc, hãy kiểm tra địa chỉ gần nhất."
+      ]
+    },
+    {
+      "tag": "collaboration",
+      "patterns": [
+        "Có thể hợp tác với shop không?",
+        "Tôi muốn làm việc với bạn.",
+        "Có chương trình hợp tác nào không?"
+      ],
+      "responses": [
+        "Chúng tôi luôn mở cửa cho cơ hội hợp tác. Vui lòng liên hệ với chúng tôi để thảo luận.",
+        "Hãy gửi đề xuất của bạn qua email để chúng tôi xem xét."
+      ]
+    },
+    {
+      "tag": "payment_security",
+      "patterns": [
+        "Thanh toán có an toàn không?",
+        "Shop có bảo mật thông tin thanh toán không?",
+        "Tôi có thể yên tâm khi thanh toán không?"
+      ],
+      "responses": [
+        "Chúng tôi sử dụng công nghệ bảo mật cao nhất để bảo vệ thông tin thanh toán của bạn.",
+        "Mọi giao dịch đều được mã hóa để đảm bảo an toàn cho bạn."
+      ]
+    },
+    {
+      "tag": "personal_data",
+      "patterns": [
+        "Thông tin cá nhân của tôi có được bảo mật không?",
+        "Shop có chia sẻ thông tin cá nhân không?",
+        "Làm thế nào để xóa thông tin cá nhân?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết bảo mật thông tin cá nhân của bạn và không chia sẻ với bên thứ ba.",
+        "Bạn có thể yêu cầu xóa thông tin cá nhân của mình qua email."
+      ]
+    },
+    {
+      "tag": "sustainable_practices",
+      "patterns": [
+        "Shop có thực hiện các biện pháp bền vững không?",
+        "Tôi muốn biết shop có sử dụng nguyên liệu tái chế không?",
+        "Có sản phẩm nào được sản xuất theo phương pháp bền vững không?"
+      ],
+      "responses": [
+        "Chúng tôi luôn tìm cách cải thiện và sử dụng nguyên liệu bền vững trong sản xuất.",
+        "Hãy tìm hiểu thêm về các sản phẩm thân thiện với môi trường trên trang web."
+      ]
+    },
+    {
+      "tag": "event_information",
+      "patterns": [
+        "Có sự kiện nào sắp tới không?",
+        "Tôi có thể tham gia sự kiện không?",
+        "Làm thế nào để đăng ký tham gia sự kiện?"
+      ],
+      "responses": [
+        "Chúng tôi thường tổ chức các sự kiện thú vị. Hãy theo dõi trang web để cập nhật thông tin mới nhất.",
+        "Bạn có thể đăng ký tham gia sự kiện qua trang web."
+      ]
+    },
+    {
+      "tag": "gift_services",
+      "patterns": [
+        "Có dịch vụ gói quà không?",
+        "Tôi có thể tặng quà cho người khác không?",
+        "Có thể gửi sản phẩm đến địa chỉ khác không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp dịch vụ gói quà cho các đơn hàng. Bạn chỉ cần chọn tùy chọn khi thanh toán.",
+        "Bạn có thể gửi hàng đến địa chỉ khác bằng cách nhập địa chỉ mới khi thanh toán."
+      ]
+    },
+    {
+      "tag": "personalization",
+      "patterns": [
+        "Có thể cá nhân hóa sản phẩm không?",
+        "Tôi muốn tạo sản phẩm riêng cho mình.",
+        "Sản phẩm có thể được tùy chỉnh không?"
+      ],
+      "responses": [
+        "Chúng tôi có dịch vụ cá nhân hóa một số sản phẩm. Vui lòng kiểm tra trên trang sản phẩm.",
+        "Nếu bạn cần tùy chỉnh, hãy liên hệ với chúng tôi để được hướng dẫn."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "Tôi gặp lỗi trên trang web.",
+        "Có thể giúp tôi giải quyết vấn đề kỹ thuật không?",
+        "Website không tải được, tôi phải làm sao?"
+      ],
+      "responses": [
+        "Nếu bạn gặp sự cố, hãy thử làm mới trang hoặc kiểm tra kết nối Internet.",
+        "Bạn có thể liên hệ với bộ phận hỗ trợ kỹ thuật để được trợ giúp."
+      ]
+    },
+    {
+      "tag": "return_instructions",
+      "patterns": [
+        "Làm thế nào để trả hàng?",
+        "Có hướng dẫn nào để đổi trả hàng không?",
+        "Tôi cần làm gì để trả lại sản phẩm?"
+      ],
+      "responses": [
+        "Bạn có thể làm theo hướng dẫn trên trang đổi trả để trả lại sản phẩm.",
+        "Hãy đảm bảo sản phẩm còn nguyên vẹn và điền đầy đủ thông tin cần thiết."
+      ]
+    },
+    {
+      "tag": "recommendations",
+      "patterns": [
+        "Bạn có thể gợi ý cho tôi một số sản phẩm không?",
+        "Sản phẩm nào là tốt nhất?",
+        "Tôi nên mua gì?"
+      ],
+      "responses": [
+        "Dựa trên sở thích của bạn, tôi gợi ý một số sản phẩm nổi bật. Hãy kiểm tra phần 'Sản phẩm được đề xuất'.",
+        "Bạn có thể tham khảo danh sách sản phẩm bán chạy nhất."
+      ]
+    },
+    {
+      "tag": "bulk_orders",
+      "patterns": [
+        "Tôi muốn đặt hàng số lượng lớn.",
+        "Có giảm giá cho đơn hàng số lượng lớn không?",
+        "Làm thế nào để đặt hàng số lượng lớn?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách ưu đãi cho đơn hàng số lượng lớn. Vui lòng liên hệ với bộ phận bán hàng.",
+        "Bạn có thể gửi yêu cầu đặt hàng qua email để được báo giá."
+      ]
+    },
+    {
+      "tag": "payment_issues",
+      "patterns": [
+        "Tôi gặp vấn đề khi thanh toán.",
+        "Có thể giúp tôi xử lý vấn đề thanh toán không?",
+        "Tại sao thanh toán của tôi không thành công?"
+      ],
+      "responses": [
+        "Vui lòng kiểm tra thông tin thẻ của bạn và thử lại.",
+        "Nếu vấn đề vẫn tiếp diễn, hãy liên hệ với bộ phận hỗ trợ khách hàng."
+      ]
+    },
+    {
+      "tag": "sale_events",
+      "patterns": [
+        "Có sự kiện giảm giá nào sắp tới không?",
+        "Khi nào có đợt sale tiếp theo?",
+        "Làm thế nào để biết các sự kiện giảm giá?"
+      ],
+      "responses": [
+        "Chúng tôi sẽ thông báo về các sự kiện giảm giá qua email và trên trang chủ.",
+        "Hãy theo dõi trang web để không bỏ lỡ bất kỳ chương trình khuyến mãi nào!"
+      ]
+    },
+    {
+      "tag": "user_guides",
+      "patterns": [
+        "Có hướng dẫn sử dụng sản phẩm không?",
+        "Tôi muốn biết cách sử dụng sản phẩm này.",
+        "Hướng dẫn sử dụng sản phẩm nằm ở đâu?"
+      ],
+      "responses": [
+        "Bạn có thể tìm thấy hướng dẫn sử dụng trong phần mô tả sản phẩm.",
+        "Chúng tôi cũng cung cấp video hướng dẫn trên kênh YouTube của mình."
+      ]
+    },
+    {
+      "tag": "sustainability",
+      "patterns": [
+        "Shop có chính sách bảo vệ môi trường không?",
+        "Tôi muốn biết về sự bền vững của sản phẩm.",
+        "Có sản phẩm nào thân thiện với môi trường không?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết sử dụng các vật liệu thân thiện với môi trường trong sản phẩm.",
+        "Bạn có thể tìm thấy thông tin về sản phẩm bền vững trên trang sản phẩm."
+      ]
+    },
+    {
+      "tag": "currency_conversion",
+      "patterns": [
+        "Tôi muốn biết tỷ giá chuyển đổi tiền tệ.",
+        "Có thể thanh toán bằng ngoại tệ không?",
+        "Giá sản phẩm bằng tiền khác là bao nhiêu?"
+      ],
+      "responses": [
+        "Chúng tôi chấp nhận thanh toán bằng VNĐ và có thể thông báo tỷ giá cho các ngoại tệ khác.",
+        "Vui lòng kiểm tra trang thanh toán để biết thêm thông tin."
+      ]
+    },
+    {
+      "tag": "online_security",
+      "patterns": [
+        "Shop có bảo mật thông tin không?",
+        "Dữ liệu của tôi có an toàn không?",
+        "Có thể đảm bảo an toàn khi mua sắm trực tuyến không?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết bảo mật thông tin cá nhân của bạn.",
+        "Tất cả các giao dịch được mã hóa để đảm bảo an toàn."
+      ]
+    },
+    {
+      "tag": "size_exchange",
+      "patterns": [
+        "Tôi muốn đổi kích thước sản phẩm.",
+        "Có thể đổi sản phẩm sang kích thước khác không?",
+        "Chính sách đổi kích thước là gì?"
+      ],
+      "responses": [
+        "Bạn có thể đổi kích thước trong vòng 7 ngày kể từ ngày nhận hàng.",
+        "Vui lòng kiểm tra kích thước trên trang sản phẩm trước khi mua."
+      ]
+    },
+    {
+      "tag": "product_maintenance",
+      "patterns": [
+        "Làm thế nào để bảo quản sản phẩm?",
+        "Có cần làm gì đặc biệt để bảo quản không?",
+        "Sản phẩm này có cần bảo trì không?"
+      ],
+      "responses": [
+        "Vui lòng tham khảo hướng dẫn bảo quản đi kèm với sản phẩm để đảm bảo sản phẩm bền lâu.",
+        "Chúng tôi khuyến nghị bạn thực hiện bảo trì định kỳ cho sản phẩm."
+      ]
+    },
+    {
+      "tag": "membership_rewards",
+      "patterns": [
+        "Có lợi ích gì cho thành viên không?",
+        "Tôi muốn biết về chương trình thưởng cho thành viên.",
+        "Thành viên có được ưu đãi gì không?"
+      ],
+      "responses": [
+        "Thành viên sẽ nhận được ưu đãi đặc biệt và điểm thưởng cho mỗi lần mua hàng.",
+        "Hãy tham gia ngay hôm nay để tận hưởng các lợi ích hấp dẫn!"
+      ]
+    },
+    {
+      "tag": "featured_products",
+      "patterns": [
+        "Có sản phẩm nổi bật nào không?",
+        "Tôi muốn biết sản phẩm nổi bật của shop.",
+        "Sản phẩm nào đang hot hiện nay?"
+      ],
+      "responses": [
+        "Sản phẩm nổi bật hiện tại có trên trang chủ của chúng tôi.",
+        "Hãy xem danh sách các sản phẩm đang được ưa chuộng nhất!"
+      ]
+    },
+    {
+      "tag": "user_tips",
+      "patterns": [
+        "Có mẹo gì cho khách hàng không?",
+        "Tôi muốn biết thêm mẹo khi mua sắm.",
+        "Mẹo sử dụng sản phẩm là gì?"
+      ],
+      "responses": [
+        "Chúng tôi có nhiều mẹo mua sắm và sử dụng sản phẩm hữu ích trên blog của chúng tôi.",
+        "Đừng quên tham khảo các mẹo này để có trải nghiệm mua sắm tốt nhất."
+      ]
+    },
+    {
+      "tag": "shipping_locations",
+      "patterns": [
+        "Shop có giao hàng đến khu vực nào?",
+        "Có giao hàng quốc tế không?",
+        "Địa chỉ nào không được giao hàng?"
+      ],
+      "responses": [
+        "Chúng tôi giao hàng đến hầu hết các tỉnh thành trên cả nước.",
+        "Hiện tại, chúng tôi chưa hỗ trợ giao hàng quốc tế."
+      ]
+    },
+    {
+      "tag": "free_shipping",
+      "patterns": [
+        "Có chính sách miễn phí vận chuyển không?",
+        "Tôi có đủ điều kiện để được miễn phí vận chuyển không?",
+        "Khi nào thì được miễn phí vận chuyển?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách miễn phí vận chuyển cho đơn hàng trên 500,000 VND.",
+        "Vui lòng kiểm tra thông tin về chính sách miễn phí vận chuyển trong phần thông tin của chúng tôi."
+      ]
+    },
+    {
+      "tag": "latest_products",
+      "patterns": [
+        "Sản phẩm mới nhất là gì?",
+        "Có sản phẩm nào mới không?",
+        "Tôi muốn xem sản phẩm mới ra mắt."
+      ],
+      "responses": [
+        "Bạn có thể xem sản phẩm mới nhất trong mục Sản phẩm mới trên trang chủ.",
+        "Chúng tôi thường xuyên cập nhật các sản phẩm mới. Hãy kiểm tra thường xuyên!"
+      ]
+    },
+    {
+      "tag": "product_feedback",
+      "patterns": [
+        "Tôi có thể đánh giá sản phẩm không?",
+        "Làm sao để gửi phản hồi về sản phẩm?",
+        "Có chỗ nào để nhận xét sản phẩm không?"
+      ],
+      "responses": [
+        "Bạn có thể để lại đánh giá cho sản phẩm sau khi mua ở trang chi tiết sản phẩm.",
+        "Chúng tôi luôn hoan nghênh phản hồi từ khách hàng về sản phẩm."
+      ]
+    },
+    {
+      "tag": "discount_inquiry",
+      "patterns": [
+        "Có ưu đãi nào không?",
+        "Shop đang có khuyến mãi gì?",
+        "Có giảm giá không?"
+      ],
+      "responses": [
+        "Chúng tôi hiện đang có chương trình khuyến mãi đặc biệt. Bạn có thể kiểm tra trong mục Ưu đãi.",
+        "Hiện tại đang có giảm giá đến 20% cho các sản phẩm mới."
+      ]
+    },
+    {
+      "tag": "forgot_password",
+      "patterns": [
+        "Làm sao để lấy lại mật khẩu?",
+        "Quên mật khẩu, làm thế nào?",
+        "Tôi quên mật khẩu rồi."
+      ],
+      "responses": [
+        "Bạn có thể khôi phục mật khẩu bằng cách nhấn vào Quên mật khẩu ở trang đăng nhập.",
+        "Hãy chọn Quên mật khẩu và làm theo hướng dẫn để đặt lại mật khẩu."
+      ]
+    },
+    {
+      "tag": "return_shipping_cost",
+      "patterns": [
+        "Phí vận chuyển khi đổi trả là bao nhiêu?",
+        "Đổi trả có mất phí không?",
+        "Ai chịu phí vận chuyển khi trả hàng?"
+      ],
+      "responses": [
+        "Phí vận chuyển khi đổi trả sẽ được hỗ trợ một phần nếu sản phẩm có lỗi từ phía chúng tôi.",
+        "Bạn sẽ cần thanh toán phí vận chuyển khi đổi trả, trừ khi sản phẩm có lỗi."
+      ]
+    },
+    {
+      "tag": "preorder_policy",
+      "patterns": [
+        "Sản phẩm đặt trước là gì?",
+        "Làm sao để đặt trước sản phẩm?",
+        "Có thể đặt trước không?"
+      ],
+      "responses": [
+        "Bạn có thể đặt trước sản phẩm và sẽ nhận hàng khi sản phẩm có sẵn.",
+        "Sản phẩm đặt trước sẽ được giao ngay khi có hàng. Bạn có thể đặt trước trong phần sản phẩm."
+      ]
+    },
+    {
+      "tag": "cancel_preorder",
+      "patterns": [
+        "Làm sao để hủy sản phẩm đặt trước?",
+        "Hủy đơn đặt trước có được không?",
+        "Tôi muốn hủy đơn hàng đặt trước."
+      ],
+      "responses": [
+        "Bạn có thể hủy đơn đặt trước trước khi sản phẩm được nhập kho.",
+        "Để hủy đơn đặt trước, vui lòng liên hệ bộ phận hỗ trợ."
+      ]
+    },
+    {
+      "tag": "order_delay",
+      "patterns": [
+        "Tại sao đơn hàng của tôi bị trễ?",
+        "Khi nào đơn hàng của tôi đến?",
+        "Tôi vẫn chưa nhận được hàng."
+      ],
+      "responses": [
+        "Đơn hàng của bạn có thể bị chậm do thời tiết hoặc vấn đề vận chuyển.",
+        "Chúng tôi sẽ kiểm tra lại với đơn vị vận chuyển và cập nhật thông tin cho bạn."
+      ]
+    },
+    {
+      "tag": "loyalty_points",
+      "patterns": [
+        "Làm sao để tích điểm?",
+        "Điểm thưởng là gì?",
+        "Tôi có thể dùng điểm thưởng như thế nào?"
+      ],
+      "responses": [
+        "Bạn sẽ nhận được điểm thưởng khi mua sắm và có thể sử dụng chúng để giảm giá.",
+        "Điểm thưởng tích lũy được dùng để giảm giá cho lần mua hàng tiếp theo."
+      ]
+    },
+    {
+      "tag": "shipping_options",
+      "patterns": [
+        "Có các lựa chọn vận chuyển nào?",
+        "Tôi có thể chọn cách giao hàng không?",
+        "Có giao hàng nhanh không?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp nhiều lựa chọn vận chuyển như giao hàng thường, giao hàng nhanh.",
+        "Bạn có thể chọn phương thức giao hàng ở bước thanh toán."
+      ]
+    },
+    {
+      "tag": "membership_tiers",
+      "patterns": [
+        "Có cấp bậc thành viên nào không?",
+        "Các cấp bậc thành viên là gì?",
+        "Lợi ích của mỗi cấp bậc thành viên là gì?"
+      ],
+      "responses": [
+        "Chúng tôi có các cấp bậc thành viên, mỗi cấp bậc đều có ưu đãi riêng.",
+        "Bạn có thể nâng cấp thành viên và nhận nhiều ưu đãi hấp dẫn hơn."
+      ]
+    },
+    {
+      "tag": "covid_policy",
+      "patterns": [
+        "Chính sách giao hàng trong dịch bệnh là gì?",
+        "Shop có lưu ý gì về COVID không?",
+        "Giao hàng có bị ảnh hưởng bởi dịch không?"
+      ],
+      "responses": [
+        "Chúng tôi thực hiện các biện pháp an toàn nghiêm ngặt trong quá trình giao hàng.",
+        "Giao hàng có thể bị chậm hơn do ảnh hưởng của dịch bệnh."
+      ]
+    },
+    {
+      "tag": "product_quality",
+      "patterns": [
+        "Sản phẩm có chất lượng đảm bảo không?",
+        "Chất lượng sản phẩm thế nào?",
+        "Sản phẩm có đáng tin cậy không?"
+      ],
+      "responses": [
+        "Chúng tôi cam kết cung cấp sản phẩm chất lượng cao, được kiểm tra kỹ càng trước khi giao đến tay khách hàng.",
+        "Sản phẩm đều có nguồn gốc rõ ràng và đảm bảo chất lượng."
+      ]
+    },
+    {
+      "tag": "promo_code_help",
+      "patterns": [
+        "Làm sao để sử dụng mã giảm giá?",
+        "Tôi có mã giảm giá, dùng như thế nào?",
+        "Mã giảm giá áp dụng thế nào?"
+      ],
+      "responses": [
+        "Bạn có thể nhập mã giảm giá khi thanh toán để nhận ưu đãi.",
+        "Mã giảm giá sẽ áp dụng ở bước thanh toán cuối."
+      ]
+    },
+    {
+      "tag": "contact_customer_service",
+      "patterns": [
+        "Làm sao để liên hệ hỗ trợ?",
+        "Có số điện thoại hỗ trợ không?",
+        "Hỗ trợ khách hàng hoạt động khi nào?"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ bộ phận hỗ trợ qua hotline 0987654321",
+        "Chúng tôi có hỗ trợ qua hotline và email trong giờ làm việc."
+      ]
+    },
+    {
+      "tag": "product_inquiry_clothing",
+      "patterns": [
+        "Có áo màu xanh không?",
+        "Áo này có size M không?",
+        "Mẫu áo này còn không?"
+      ],
+      "responses": [
+        "Chúng tôi có áo màu xanh size M sẵn hàng. Bạn có thể đặt mua ngay!",
+        "Mẫu áo này hiện có các size S, M, L và màu sắc đa dạng."
+      ]
+    },
+    {
+      "tag": "size_chart",
+      "patterns": [
+        "Làm sao để chọn size?",
+        "Có bảng size không?",
+        "Size của áo quần như thế nào?"
+      ],
+      "responses": [
+        "Bạn có thể tham khảo bảng size ở phần mô tả sản phẩm.",
+        "Chúng tôi có bảng size chi tiết cho từng sản phẩm."
+      ]
+    },
+    {
+      "tag": "restock_notification",
+      "patterns": [
+        "Khi nào sản phẩm này có hàng lại?",
+        "Có thể thông báo khi sản phẩm có hàng không?",
+        "Tôi muốn nhận thông báo khi có hàng."
+      ],
+      "responses": [
+        "Bạn có thể đăng ký nhận thông báo khi sản phẩm được restock.",
+        "Chúng tôi sẽ gửi thông báo qua email khi sản phẩm có hàng."
+      ]
+    },
+    {
+      "tag": "wishlist_help",
+      "patterns": [
+        "Làm sao để thêm sản phẩm vào danh sách yêu thích?",
+        "Danh sách yêu thích ở đâu?",
+        "Tôi có thể lưu sản phẩm yêu thích không?"
+      ],
+      "responses": [
+        "Bạn có thể thêm sản phẩm vào danh sách yêu thích bằng cách nhấn vào biểu tượng trái tim.",
+        "Danh sách yêu thích của bạn sẽ được lưu lại trong tài khoản."
+      ]
+    },
+    {
+      "tag": "notification_settings",
+      "patterns": [
+        "Làm sao để quản lý thông báo?",
+        "Tôi muốn tắt thông báo.",
+        "Có thể bật/tắt thông báo không?"
+      ],
+      "responses": [
+        "Bạn có thể quản lý cài đặt thông báo trong phần Cài đặt tài khoản.",
+        "Vào Cài đặt để tùy chỉnh thông báo mà bạn muốn nhận."
+      ]
+    }
+  ]
+}

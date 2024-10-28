@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+
+    <title>Chatbot</title>
+
+</head>
+<body>
+<button id="toggle-theme" onclick="toggleTheme()">🌙</button>
+
+<div id="sidebar">
+    <h2>Danh sách Chat</h2>
+    <ul>
+        <li>Đoạn chat 1</li>
+        <li>Đoạn chat 2</li>
+        <li>Đoạn chat 3</li>
+        <!-- Thêm các đoạn chat khác -->
+    </ul>
+</div>
+
+<div id="chat-container">
+    <div class="header">
+        <h2>Box Chat</h2>
+    </div>
+    <div id="chat"></div>
+    <div id="input-container">
+        <input type="text" id="user_input" placeholder="Type here...">
+        <button onclick="startVoiceRecognition()">🎤</button>
+        <button onclick="sendMessage()">Send</button>
+
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
