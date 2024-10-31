@@ -24,7 +24,7 @@ source .venv/bin/activate
 ### 4. Install requirements
 #### Install the required packages using the requirements.txt file:
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 ### 5. Run the test
 #### First you train the data
